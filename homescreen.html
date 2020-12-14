@@ -22,21 +22,39 @@
         <![endif]-->
 
         <div class="container">
-            <h1>YOLOCALC</h1>
+            <h1 class="text-center">YOLOCALC</h1>
+            
+            <form class="form-inline" action="??">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="amountToGamble">Amount to gamble</label>
+                        <input type="text" class="form-control" id="amountToGamble" placeholder="???">
+                    </div>
+                        
+                    <div class="form-group">
+                        <label for="aggressiveness">Aggressiveness on a scale of 1-10</label>
+                        <input type="range" class="form-control" id="aggressiveness" min="10" max="15" step="1">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="amountToGamble">Preferred tickers</label>
+                        <input type="text" class="form-control" id="amountToGamble" placeholder="">
+                    </div>
+    
+                    <div class="form-group">
+                        <button class="btn my-3">Create my position!</button>
+                    </div>
+                </div>
+            </form>
+            
+            <div class="footer">
+                <div>Donate</div>
+                <div>Disclaimer</div>
+                <div>About</div>
+            </div>
         </div>
 
-        <div class="inputs">
-            <div>Amount to gamble</div>
-            <div>Aggressiveness</div>
-            <div>IQ</div>
-            <div>Preferred tickers</div>
-        </div>
         
-        <div class="footer">
-            <div>Donate</div>
-            <div>Disclaimer</div>
-            <div>About</div>
-        </div>
         <script src="" async defer></script>
     </body>
 </html>
