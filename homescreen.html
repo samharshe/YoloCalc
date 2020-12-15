@@ -24,36 +24,63 @@
         <div class="container">
             <h1 class="text-center">YOLOCALC</h1>
             
-            <form class="form-inline" action="??">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="amountToGamble">Amount to gamble</label>
-                        <input type="text" class="form-control" id="amountToGamble" placeholder="???">
-                    </div>
-                        
-                    <div class="form-group">
-                        <label for="aggressiveness">Aggressiveness on a scale of 1-10</label>
-                        <input type="range" class="form-control" id="aggressiveness" min="10" max="15" step="1">
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="amountToGamble">Preferred tickers</label>
-                        <input type="text" class="form-control" id="amountToGamble" placeholder="">
-                    </div>
-    
-                    <div class="form-group">
-                        <button class="btn my-3">Create my position!</button>
+            <form action="??">
+                <div class="form-group col-md-3">
+                    <label for="amountToGamble">Amount to gamble</label>
+                    <input type="text" class="form-control" id="amountToGamble" placeholder="???">
+                </div>
+                    
+                <div class="form-group col-md-3">
+                    <label for="aggressiveness">Aggressiveness on a scale of 1-10</label>
+                    <input type="range" class="form-control" id="aggressiveness" min="10" max="20" step="1">
+                </div>
+
+                <div class="form-group col-md-3">
+                    <label for="amountToGamble">Preferred tickers</label>
+                    <input type="text" class="form-control" id="amountToGamble" placeholder="">
+                </div>
+
+                <div class="form-group col-md-3">
+                    Preferred security types
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="calls">
+                        <label class="form-check-label" for="calls">
+                          Calls
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="leveragedLong" >
+                        <label class="form-check-label" for="leveragedLong">
+                          Leveraged long
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="bonds" disabled>
+                        <label class="form-check-label" for="bonds">
+                          Bonds
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="indexFunds" disabled>
+                        <label class="form-check-label" for="indexFunds">
+                          Index funds
+                        </label>
+                      </div>
                     </div>
                 </div>
+
+
+                <div class="text-center">
+                    <button class="btn btn-success">YOLO</button>
+                </div>
             </form>
-            
-            <div class="footer">
-                <div>Donate</div>
-                <div>Disclaimer</div>
-                <div>About</div>
-            </div>
         </div>
 
+        <div class="footer">
+            <div class="col-md-4 text-center">Donate</div>
+            <div class="col-md-4 text-center">Disclaimer</div>
+            <div class="col-md-4 text-center">About</div>
+        </div>
         
         <script src="" async defer></script>
     </body>
