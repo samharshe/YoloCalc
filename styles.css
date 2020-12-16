@@ -5,6 +5,11 @@
     width: 100%;
 }
 
+.form-control {
+    border: 1px solid lightgrey;
+    box-shadow: none;
+}
+
 #leftLabel {
     padding-left: 0;
 }
