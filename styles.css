@@ -4,3 +4,11 @@
     background: lightblue;
     width: 100%;
 }
+
+#leftLabel {
+    padding-left: 0;
+}
+
+#rightLabel {
+    padding-right: 0;
+}

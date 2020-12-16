@@ -10,78 +10,54 @@
         <title>YoloCalc</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+       <!-- My own stylesheet -->
         <link rel="stylesheet" href="styles.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </head>
+        <!-- My own hacky JS -->
+        <script src="app.js"></script>
+      </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      <!--[if lt IE 7]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
 
-        <div class="container">
-            <h1 class="text-center">YOLOCALC</h1>
-            
-            <form action="??">
-                <div class="form-group col-md-3">
-                    <label for="amountToGamble">Amount to gamble</label>
-                    <input type="text" class="form-control" id="amountToGamble" placeholder="???">
-                </div>
-                    
-                <div class="form-group col-md-3">
-                    <label for="aggressiveness">Aggressiveness on a scale of 1-10</label>
-                    <input type="range" class="form-control" id="aggressiveness" min="10" max="20" step="1">
-                </div>
+      <div class="container">
+          <h1 class="text-center">YOLOCALC</h1>
+          
+          <form action="??">
+              <div class="form-group col-md-4">
+                  <label for="amountToGamble">Amount to gamble</label>
+                  <input type="text" class="form-control" id="amountToGamble" placeholder="???">
+              </div>
+                  
+              <div class="form-group col-md-4">
+                  <label for="aggressiveness">Aggressiveness (scale 1-10)</label>
+                  <input type="range" class="form-control" id="aggressiveness" min="10" max="20" step="1">
+                  <div class="text-left d-inline-block col-xs-4" id="leftLabel">10</div>
+                  <div class="text-center d-inline-block col-xs-4" id="currentValueLabel">50</div>
+                  <div class="text-right d-inline-block col-xs-4" id="rightLabel">110</div>
+              </div>
 
-                <div class="form-group col-md-3">
-                    <label for="amountToGamble">Preferred tickers</label>
-                    <input type="text" class="form-control" id="amountToGamble" placeholder="">
-                </div>
+              <div class="form-group col-md-4">
+                  <label for="amountToGamble">Preferred tickers</label>
+                  <input type="text" class="form-control" id="amountToGamble" placeholder="">
+              </div>
 
-                <div class="form-group col-md-3">
-                    Preferred security types
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="calls">
-                        <label class="form-check-label" for="calls">
-                          Calls
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="leveragedLong" >
-                        <label class="form-check-label" for="leveragedLong">
-                          Leveraged long
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="bonds" disabled>
-                        <label class="form-check-label" for="bonds">
-                          Bonds
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="indexFunds" disabled>
-                        <label class="form-check-label" for="indexFunds">
-                          Index funds
-                        </label>
-                      </div>
-                    </div>
-                </div>
+              <div class="text-center col-xs-12">
+                  <a href="results.html"><button class="btn btn-success">YOLO</button></a>
+              </div>
+          </form>
+      </div>
 
-
-                <div class="text-center">
-                    <button class="btn btn-success">YOLO</button>
-                </div>
-            </form>
-        </div>
-
-        <div class="footer">
-            <div class="col-md-4 text-center">Donate</div>
-            <div class="col-md-4 text-center">Disclaimer</div>
-            <div class="col-md-4 text-center">About</div>
-        </div>
+      <div class="footer">
+          <div class="col-md-4 text-center">Donate</div>
+          <div class="col-md-4 text-center">Disclaimer</div>
+          <div class="col-md-4 text-center">About</div>
+      </div>
         
-        <script src="" async defer></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>
