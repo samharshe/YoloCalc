@@ -1,0 +1,5 @@
+add stuff to results page
+make tickers suggested inputs
+add emojis
+footer pages
+entire backend!
